@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846A4A4EBB39A2F2B8ED3BA4 /* Pods_GSHexin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F49A2677B2C573AD647FF67 /* Pods_GSHexin.framework */; };
 		BEB610AC244AFC0C000B2294 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB610AB244AFC0C000B2294 /* AppDelegate.m */; };
 		BEB610AF244AFC0C000B2294 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB610AE244AFC0C000B2294 /* SceneDelegate.m */; };
 		BEB610B2244AFC0C000B2294 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB610B1244AFC0C000B2294 /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F49A2677B2C573AD647FF67 /* Pods_GSHexin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GSHexin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B53CFECBEB4B54699E08E75A /* Pods-GSHexin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSHexin.debug.xcconfig"; path = "Target Support Files/Pods-GSHexin/Pods-GSHexin.debug.xcconfig"; sourceTree = "<group>"; };
 		BEB610A7244AFC0C000B2294 /* GSHexin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSHexin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB610AA244AFC0C000B2294 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BEB610AB244AFC0C000B2294 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		BEB610CD244AFC10000B2294 /* GSHexinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSHexinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB610D1244AFC10000B2294 /* GSHexinUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSHexinUITests.m; sourceTree = "<group>"; };
 		BEB610D3244AFC10000B2294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3C0E8A79BB3CB9EB083E78C /* Pods-GSHexin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GSHexin.release.xcconfig"; path = "Target Support Files/Pods-GSHexin/Pods-GSHexin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846A4A4EBB39A2F2B8ED3BA4 /* Pods_GSHexin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CE51B7F5AE526A27380501A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B53CFECBEB4B54699E08E75A /* Pods-GSHexin.debug.xcconfig */,
+				C3C0E8A79BB3CB9EB083E78C /* Pods-GSHexin.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BEB6109E244AFC0C000B2294 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +103,8 @@
 				BEB610C5244AFC10000B2294 /* GSHexinTests */,
 				BEB610D0244AFC10000B2294 /* GSHexinUITests */,
 				BEB610A8244AFC0C000B2294 /* Products */,
+				2CE51B7F5AE526A27380501A /* Pods */,
+				C0079315DC16A6E31419CFCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +154,14 @@
 			path = GSHexinUITests;
 			sourceTree = "<group>";
 		};
+		C0079315DC16A6E31419CFCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F49A2677B2C573AD647FF67 /* Pods_GSHexin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEB610D6244AFC10000B2294 /* Build configuration list for PBXNativeTarget "GSHexin" */;
 			buildPhases = (
+				1F40CF52B5AB26C6391B35A0 /* [CP] Check Pods Manifest.lock */,
 				BEB610A3244AFC0C000B2294 /* Sources */,
 				BEB610A4244AFC0C000B2294 /* Frameworks */,
 				BEB610A5244AFC0C000B2294 /* Resources */,
+				C3B68C1E524A94B61678D19F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +288,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F40CF52B5AB26C6391B35A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GSHexin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3B68C1E524A94B61678D19F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GSHexin/Pods-GSHexin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GSHexin/Pods-GSHexin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GSHexin/Pods-GSHexin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BEB610A3244AFC0C000B2294 /* Sources */ = {
@@ -437,6 +506,7 @@
 		};
 		BEB610D7244AFC10000B2294 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B53CFECBEB4B54699E08E75A /* Pods-GSHexin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +524,7 @@
 		};
 		BEB610D8244AFC10000B2294 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3C0E8A79BB3CB9EB083E78C /* Pods-GSHexin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
